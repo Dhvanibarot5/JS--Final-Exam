@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center; font-size: 1.5rem">Quiz Master</h1>
+    </header>
+    <div class="container">
+      <div class="question" id="question">Loading question...</div>
+      <div class="options" id="options"></div>
+      <div class="feedback" id="feedback"></div>
+      <div class="controls">
+        <button class="control-button" id="prev-btn" disabled>Previous</button>
+        <button class="control-button" id="next-btn" disabled>Next</button>
+      </div>
+      <div class="end-section">
+        <div class="score" id="score" style="margin-top: 20px; font-size: 1.2rem; color: #333"></div>
+      <button onclick="goBack()">Go Back to Quiz</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="result.js"></script>
+  </body>
+</html>

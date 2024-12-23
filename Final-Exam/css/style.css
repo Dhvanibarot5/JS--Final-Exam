@@ -1,0 +1,128 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  top: 0;
+  color: #ffffff;
+  background-color: #333333;
+  margin: 0;
+  position: fixed;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.container {
+  max-width: 550px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 80px;
+  background: #282828;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.question {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.control-button {
+  padding: 12px 25px;
+  background-color: #00adb5;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.control-button:hover {
+  background-color: #5dd9dd;
+  transform: scale(1.05);
+}
+
+.control-button:disabled {
+  background-color: #666666;
+  cursor: not-allowed;
+}
+
+.option-button {
+  padding: 15px;
+  background-color: #444444;
+  color: #ffffff;
+  border: 1px solid #00adb5;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.option-button:hover {
+  background-color: #5dd9dd;
+  transform: translateY(-3px);
+}
+
+.option-button:active {
+  transform: scale(0.97);
+}
+
+.option-button:disabled {
+  background-color: #333333;
+  cursor: not-allowed;
+}
+
+.score {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #00adb5;
+}
+
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 15px;
+  }
+
+  .control-button,
+  .option-button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+.end-section{
+  
+}
